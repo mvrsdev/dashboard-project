@@ -9,6 +9,7 @@ body {
     --primary-color-text: #181c32;
     --default-color-dark: #f2f2f2;
     --default-color-light: #7e8299;
+    --default-background-color: #fff;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -42,10 +43,15 @@ body {
     color: rgba(255, 255, 255, 1);
 }
 
-.fw-bolder {
-    font-weight: 600;
-}
-
 .fs-3 {
     font-size: calc(1.26rem + .12vw);
+}
+
+.bg-box {
+    background-color: var(--default-background-color);
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px;
+    height: 510px;
+    border-radius: calc(0.625rem - 1px);
 }

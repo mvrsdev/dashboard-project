@@ -9,7 +9,7 @@ header {
 }
 
 .small-logo {
-    width: 24px;
+    width: 28px;
     height: auto;
     margin-left: 8px;
 }
@@ -27,6 +27,90 @@ h1 {
     padding: 8px;
 }
 
+h3 {
+    padding: 16px 8px 8px 24px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.white-writing {
+    color: #fff;
+}
+
+.first-one {
+    border-top: -300;
+}
+
+.article-top {
+    background-color: #f1416c;
+    height: 280px;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: calc(0.625rem - 1px);
+    position: relative;
+}
+
+.article-bottom {
+    background-color: #fff;
+    height: 250px;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: calc(0.625rem - 1px);
+}
+
+.row-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 1.75rem;
+    position: relative;
+    top: -24px;
+}
+
+.row-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 1.75rem;
+    position: relative;
+    top: -24px;
+}
+
+.box {
+    height: 116px;
+    width: 142px;
+    padding: 2.5rem 2rem;
+    margin-bottom: 1.75rem;
+    margin-right: 1.75rem;
+    border-radius: .475rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.075rem;
+    font-weight: 500;
+}
+.one {
+    background-color: #fff8dd;
+    color: #ffc700
+}
+
+.two {
+    background-color: #f1faff;
+    color: #009ef7
+}
+
+.three {
+    background-color: #fff5f8;
+    color: #f1416c
+}
+
+.four {
+    background-color: #e8fff3;
+    color: #50cd89
+}
+
 footer {
     font-size: 12px;
     background-color: #fff;
@@ -34,12 +118,13 @@ footer {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 8px;
 }
 
 
 footer a {
     text-decoration: none;
-    padding: 0.5em ;
+    padding: 0.5em;
     line-height: 2.1em;
     color: var(--default-color-light);
 }
@@ -59,5 +144,5 @@ footer span {
 }
 
 .footer-bottom {
-    color:#3f4254;
+    color: #3f4254;
 }
