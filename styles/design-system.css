@@ -8,7 +8,8 @@ body {
     --hover-color-text: #1a73e8;
     --primary-color-text: #181c32;
     --default-color-dark: #f2f2f2;
-    --default-color-light: #7e8299;
+    --default-color-light: #a1a5b7;
+    --dark-text-box: #3f4254;
     --default-background-color: #fff;
     display: flex;
     flex-direction: column;
