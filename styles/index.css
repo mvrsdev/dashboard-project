@@ -20,11 +20,14 @@ header {
 
 aside {
     display: none;
+    position: fixed;
     background-color: #1b1b28;
     width: 250px;
-    height: 1450px;
+    height: 100vh;
+    overflow: scroll;
     color: var(--default-color-dark);
     line-height: 3rem;
+    z-index: 999;
 }
 
 aside ul li a {
