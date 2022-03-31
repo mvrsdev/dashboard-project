@@ -160,6 +160,11 @@ h3 {
     color: var(--dark-text-box);
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.large-box:hover {
+    color: var(--hover-color-text);
 }
 
 .light-text {
