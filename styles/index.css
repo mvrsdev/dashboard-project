@@ -5,7 +5,13 @@ header {
     display: flex;
     align-items: center;
     padding: 8px;
+}
+
+.header-box {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 98vw;
 }
 
 .small-logo {
@@ -14,21 +20,23 @@ header {
     margin-left: 8px;
 }
 
-.header-right {
-    justify-content: flex-end;
-}
-
 aside {
     display: none;
     position: fixed;
     background-color: #1b1b28;
     width: 250px;
     height: 100vh;
-    overflow: scroll;
     color: var(--default-color-dark);
     line-height: 3rem;
     z-index: 999;
+    transition: 0.3s;
 }
+
+.close-toggle {
+    padding: 8px;
+    transition: 0.5s;
+}
+
 
 aside ul li a {
     text-decoration: none;
@@ -61,6 +69,13 @@ h3 {
     color: #fff;
 }
 
+.first-box {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 25px;
+}
+
 .article-top {
     background-color: #f1416c;
     height: 280px;
@@ -74,7 +89,7 @@ h3 {
 
 .article-bottom {
     background-color: #fff;
-    height: 250px;
+    height: 256px;
     width: 360px;
     margin-left: auto;
     margin-right: auto;
@@ -100,7 +115,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.075rem;
+    font-size: 16px;
     font-weight: 500;
 }
 

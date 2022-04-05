@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/index.css">
     <link rel="stylesheet" type="text/css" href="styles/design-system.css">
+    <link rel="stylesheet" type="text/css" href="styles/script.js">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="assets/images/duck.svg" type="image/x-icon">
     <title>Site do Marcus</title>
@@ -14,22 +15,35 @@
 
 <body>
     <header>
-        <div>
-            <span class="material-icons md-dark">menu</span>
-            <img class="small-logo" src="assets/images/duck.svg" alt="Logo MV">
-        </div>
-        <div class="header-right">
-            <span class="material-icons md-dark">search</span>
-            <span class="material-icons md-dark">stacked_bar_chart</span>
-            <span class="material-icons md-dark">stream</span>
-            <span class="material-icons md-dark">chat</span>
-            <span class="material-icons md-dark">space_dashboard</span>
-            <span class="material-icons md-dark">brightness_4</span>
-            <span class="material-icons md-dark">account_box</span>
-            <span class="material-icons md-dark"></span>
+        <div class="header-box">
+            <div class="menu-toggle">
+                <div class="close-toggle">
+                    <span class="material-icons md-dark">menu</span>
+                    <img class="small-logo" src="assets/images/duck.svg" alt="Logo MV">
+                </div>
+            </div>
+            <div class="header-right">
+                <span class="material-icons md-dark">search</span>
+                <span class="material-icons md-dark">stacked_bar_chart</span>
+                <span class="material-icons md-dark">stream</span>
+                <span class="material-icons md-dark">chat</span>
+                <span class="material-icons md-dark">space_dashboard</span>
+                <span class="material-icons md-dark">brightness_4</span>
+                <span class="material-icons md-dark">account_box</span>
+                <span class="material-icons md-dark"></span>
+            </div>
         </div>
     </header>
+    <div class="sub-header">
+        <h1 class="fs-3">Dashboard</h1>
+    </div>
     <aside>
+        <div class="menu-toggle">
+            <div class="close-toggle">
+                <span class="material-icons md-dark">close</span>
+                <!-- <img class="small-logo" src="assets/images/duck.svg" alt="Logo MV"> -->
+            </div>
+        </div>
         <ul>
             <li><a href="">Multipurpose</a></li>
             <li><a href="">eCommerce</a></li>
@@ -44,12 +58,11 @@
         </ul>
     </aside>
     <main>
-        <h1 class="fs-3">Dashboard</h1>
-        <article>
-            <div class="article-top">
+        <article class="first-box">
+            <section class="article-top">
                 <h3 class="white-writing">Estatísticas de Venda</h3>
-            </div>
-            <div class="article-bottom">
+            </section>
+            <section class="article-bottom">
                 <div class="row">
                     <section class="box one">Vendas Semanais</section>
                     <section class="box two">Novos Projetos</section>
@@ -58,7 +71,7 @@
                     <section class="box three">Pedidos</section>
                     <section class="box four">Reclamações</section>
                 </div>
-            </div>
+            </section>
         </article>
         <article class="article-box">
             <h3>Notificações</h3>
