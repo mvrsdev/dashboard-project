@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        display: flex;
+      }
+
+      aside {
+        width: 250px;
+        background: lightblue;
+      }
+
+      main {
+        flex-grow: 1;
+        background: lightcoral;
+      }
+
+      header {
+        min-height: 48px;
+        background: lightyellow;
+      }
+    </style>
+    <title>Drawer Menu Idea</title>
+  </head>
+  <body>
+    <aside id="drawer-menu">I'm a Drawer menu</aside>
+    <main>
+      <header>
+        <button id="toggle-button">Toggle Menu</button>
+        I'm a header
+      </header>
+      I'm whole site container
+    </main>
+
+    <script>
+      const drawerMenu = document.getElementById("drawer-menu");
+      document.getElementById("toggle-button").addEventListener("click", () => {
+        drawerMenu.style.display =
+          drawerMenu.style.display === "none" ? "flex" : "none";
+      });
+    </script>
+  </body>
+</html>
