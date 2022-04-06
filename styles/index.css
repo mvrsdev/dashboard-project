@@ -21,10 +21,10 @@ header {
 }
 
 aside {
-    display: none;
-    position: fixed;
+    display: flex;
+    position: relative;
     background-color: #1b1b28;
-    width: 250px;
+    min-width: 250px;
     height: 100vh;
     color: var(--default-color-dark);
     line-height: 3rem;
@@ -33,6 +33,7 @@ aside {
 }
 
 .close-toggle {
+    cursor: pointer;
     padding: 8px;
     transition: 0.5s;
 }
