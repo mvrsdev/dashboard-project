@@ -96,6 +96,8 @@ h3 {
     border-radius: calc(0.625rem - 1px);
 }
 
+
+
 .row {
     display: flex;
     flex-direction: row;
@@ -117,6 +119,7 @@ h3 {
     align-items: center;
     font-size: 16px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .one {
@@ -141,6 +144,23 @@ h3 {
 
 .five {
     background-color: #efe8ff;
+}
+
+.box.one:hover {
+    border: 0.5px solid #ffc700;
+    transition: 0.3s;
+}
+.box.two:hover {
+    border: 0.5px solid #009ef7;
+    transition: 0.3s;
+}
+.box.three:hover {
+    border: 0.5px solid #f1416c;
+    transition: 0.3s;
+}
+.box.four:hover {
+    border: 0.5px solid #50cd89;
+    transition: 0.3s;
 }
 
 .article-box {
@@ -174,6 +194,7 @@ h3 {
 
 .large-box:hover {
     color: var(--hover-color-text);
+    transition: 0.3s;
 }
 
 .light-text {
