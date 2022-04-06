@@ -18,13 +18,24 @@
       }
 
       main {
+        display: flex;
+        flex-direction: column;
         flex-grow: 1;
         background: lightcoral;
+      }
+
+      main > p {
+        flex-grow: 1;
       }
 
       header {
         min-height: 48px;
         background: lightyellow;
+      }
+
+      footer {
+        justify-self: flex-end;
+        background: lightgreen;
       }
     </style>
     <title>Drawer Menu Idea</title>
@@ -36,7 +47,8 @@
         <button id="toggle-button">Toggle Menu</button>
         I'm a header
       </header>
-      I'm whole site container
+      <p>I'm whole site container</p>
+      <footer>I'm a footer</footer>
     </main>
 
     <script>
