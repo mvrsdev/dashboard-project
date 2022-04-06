@@ -13,6 +13,7 @@
       }
 
       aside {
+        transition: all 350ms cubic-bezier(0.165, 0.84, 0.44, 1);
         width: 250px;
         background: lightblue;
       }
@@ -51,11 +52,25 @@
       <footer>I'm a Footer</footer>
     </main>
 
-    <script>
+    <script defer>
+      // Set animated menu (or not)
+      const drawerAnimation = true;
+
+      // Get element instances
       const drawerMenu = document.getElementById("drawer-menu");
+      const drawerMenuWidth = drawerMenu.offsetWidth;
+
+      // Listen "click" event on Toggle Button to close or open the menu
       document.getElementById("toggle-button").addEventListener("click", () => {
-        drawerMenu.style.display =
-          drawerMenu.style.display === "none" ? "flex" : "none";
+        if (drawerAnimation) {
+          // Animated way
+          drawerMenu.style.width =
+            drawerMenu.style.width !== "0px" ? 0 : `${drawerMenuWidth}px`;
+        } else {
+          // Static way
+          drawerMenu.style.display =
+            drawerMenu.style.display === "none" ? "flex" : "none";
+        }
       });
     </script>
   </body>
