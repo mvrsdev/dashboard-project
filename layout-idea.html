@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        display: flex;
+      }
+
+      aside {
+        transition: all 350ms cubic-bezier(0.165, 0.84, 0.44, 1);
+        width: 250px;
+        background: lightblue;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        background: lightcoral;
+      }
+
+      main > p {
+        flex-grow: 1;
+      }
+
+      header {
+        min-height: 48px;
+        background: lightyellow;
+      }
+
+      footer {
+        justify-self: flex-end;
+        background: lightgreen;
+      }
+    </style>
+    <title>Drawer Menu Idea</title>
+  </head>
+  <body>
+    <aside id="drawer-menu">I'm a Drawer Menu</aside>
+    <main>
+      <header>
+        <button id="toggle-button">Toggle Menu</button>
+        I'm a Header
+      </header>
+      <p>I'm the whole site container</p>
+      <footer>I'm a Footer</footer>
+    </main>
+
+    <script defer>
+      // Set animated menu (or not)
+      const drawerAnimation = false;
+
+      // Get element instances
+      const drawerMenu = document.getElementById("drawer-menu");
+      const drawerMenuWidth = drawerMenu.offsetWidth;
+
+      // Listen "click" event on Toggle Button to close or open the menu
+      document.getElementById("toggle-button").addEventListener("click", () => {
+        if (drawerAnimation) {
+          // Animated way
+          drawerMenu.style.width =
+            drawerMenu.style.width !== "0px" ? 0 : `${drawerMenuWidth}px`;
+        } else {
+          // Static way
+          drawerMenu.style.display =
+            drawerMenu.style.display === "none" ? "flex" : "none";
+        }
+      });
+    </script>
+  </body>
+</html>
