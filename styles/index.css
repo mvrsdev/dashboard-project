@@ -29,8 +29,7 @@ header {
 }
 
 aside {
-  display: flex;
-  position: relative;
+  position: fixed;
   background-color: #1b1b28;
   min-width: 250px;
   height: 100vh;
