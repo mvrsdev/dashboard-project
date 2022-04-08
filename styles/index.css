@@ -20,6 +20,10 @@ header {
   margin-left: 8px;
 }
 
+.sub-header {
+  display: none;
+  }
+
 .drawer-box {
   display: flex;
 }

@@ -67,7 +67,7 @@ body {
         align-items: center;
     }
 
-    /* aside {
-        position: sticky;
-    } */
+    .sub-header {
+        display: flex;
+        }
 }
